@@ -73,7 +73,7 @@ export default function Map({
 
     layer.bindPopup(
       `
-      <div >
+      <div style="font-family: 'Tajawal', sans-serif;">
       <div style=" width:100%; float:left; background-image: url('${COProjectImage1}'); background-size: cover; padding-top: 40px; padding-bottom: 40px; background-blend-mode: overlay;     background-color: #162641;  image-repeat:no-repeat; margin-bottom:20px; font-weight:10px">
        <h1 style='font-size: 18px; color: white; text-align:center; padding:20px; font-weight: 700;'> ${COProjectName} </h1>
       </div>
@@ -100,7 +100,7 @@ export default function Map({
       "https://geo1.esmrts.com/image/" + spf.properties.image4;
     layer.bindPopup(
       `
-      <div >
+      <div style="font-family: 'Tajawal', sans-serif;" >
       <div style=" width:100%; float:left; background-image: url('${COProjectImage1}'); background-size: cover; padding-top: 40px; padding-bottom: 40px; background-blend-mode: overlay;     background-color: #162641;  image-repeat:no-repeat; margin-bottom:20px; font-weight:10px">
        <h1 style='font-size: 18px; color: white; text-align:center; padding:20px; font-weight: 700;'> ${SPFProjectName} </h1>
       </div>
@@ -141,20 +141,20 @@ export default function Map({
         <Marker position={position} icon={greenIcon}>
           <Popup>
             {areaGov ? (
-              <h1 className="font-bold mt-5 p-4">أنت هنا</h1>
+              <h1 className="font-bold mt-5 p-4 font-tajwal">أنت هنا</h1>
             ) : projectPosition ? (
               <>
-                <h1 className="font-bold mt-5 p-4 text-center">
+                <h1 className="font-bold mt-5 p-4 text-center font-tajwal">
                   {" "}
                   {projectName}
                 </h1>
                 <hr />
-                <h1 className="font-bold mt-5 text-center p-4">
+                <h1 className="font-bold mt-5 text-center p-4 font-tajwal">
                   {projectDescription}{" "}
                 </h1>
               </>
             ) : (
-              <h1 className="font-bold mt-5  p-4">أنت هنا</h1>
+              <h1 className="font-bold mt-5  p-4 font-tajwal">أنت هنا</h1>
             )}
           </Popup>
         </Marker>
@@ -183,7 +183,7 @@ export default function Map({
   }
 
   return (
-    <div className=" flex relative mt-[69.38px]" id="map">
+    <div className=" flex relative mt-[69.38px] font-tajwal" id="map">
       <MapContainer
         center={[47.4818, 29.3117]}
         zoom={15}

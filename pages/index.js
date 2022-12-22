@@ -74,7 +74,7 @@ export default function Home() {
   
 
   return (
-    <div className="overflow-y-hidden">
+    <div className="overflow-y-hidden font-tajwal">
       <Head>
       <title>مستكشف المشاريع الجغرافية</title>
       <meta name="description" content="نظام مستكشف المشاريع الجغرافية وزارة الأشغال العامة الكويت" />

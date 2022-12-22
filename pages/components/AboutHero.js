@@ -3,7 +3,7 @@ import React from 'react'
 const AboutHero = () => {
   return (
     <div>
-         <div className='bg-cover w-full h-screen  bg-[url("https://geo1.esmrts.com/wp-content/uploads/2021/06/shutterstock_1228516114-scaled.jpg")]'>   <div className='w-full h-full bg-black/50'>
+         <div className='font-tajwal bg-cover w-full h-screen  bg-[url("https://geo1.esmrts.com/wp-content/uploads/2021/06/shutterstock_1228516114-scaled.jpg")]'>   <div className='w-full h-full bg-black/50'>
                 <div className=' align-middle py-60 px-10 text-right'>
                     <h1 className='text-5xl text-white font-extralight text-right'>
                     التحول الرقمي في نظم المعلومات الجغرافية</h1>
