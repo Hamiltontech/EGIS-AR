@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "gov",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1.0, "objectid_1": 2.0, "objectid": 12.0, "governorat": "الاحمدى", "gove_numbe": 1, "المحا": null, "gov_eng": "Ahmadi", "east": 47.956065934012464, "north": 28.817153414288789 }, "geometry": { "type": "Point", "coordinates": [ 47.956065934012464, 28.817153414288789] } },
+{ "type": "Feature", "properties": { "id": 0.0, "objectid_1": 1.0, "objectid": 10.0, "governorat": "الجهراء", "gove_numbe": 0, "المحا": null, "gov_eng": "Al Jahra", "east": 47.484351516991808, "north": 29.554654567168221 }, "geometry": { "type": "Point", "coordinates": [ 47.484351516991808, 29.554654567168221 ] } },
+{ "type": "Feature", "properties": { "id": 4.0, "objectid_1": 5.0, "objectid": 50.0, "governorat": "العاصمة", "gove_numbe": 4, "المحا": null, "gov_eng": "Capital", "east": 47.926217527903582, "north": 29.33984256676154 }, "geometry": { "type": "Point", "coordinates": [ 47.926217527903582, 29.33984256676154 ] } },
+{ "type": "Feature", "properties": { "id": 2.0, "objectid_1": 3.0, "objectid": 28.0, "governorat": "حولي", "gove_numbe": 2, "المحا": null, "gov_eng": "Hawally", "east": 48.042927513977986, "north": 29.306057309595879 }, "geometry": { "type": "Point", "coordinates": [ 48.042927513977986, 29.306057309595879 ] } },
+{ "type": "Feature", "properties": { "id": 3.0, "objectid_1": 4.0, "objectid": 30.0, "governorat": "مبارك الكبير", "gove_numbe": 3, "المحا": null, "gov_eng": "MUBARAK AL KABEER", "east": 48.05114382599313, "north": 29.221835130011879 }, "geometry": { "type": "Point", "coordinates": [ 48.05114382599313, 29.221835130011879 ] } },
+{ "type": "Feature", "properties": { "id": 5.0, "objectid_1": 6.0, "objectid": 85.0, "governorat": "الفروانية", "gove_numbe": 5, "المحا": null, "gov_eng": "Al Farwaniyah", "east": 47.918250195999327, "north": 29.242759980659205 }, "geometry": { "type": "Point", "coordinates": [ 47.918250195999327, 29.242759980659205 ] } }
+]
+}
