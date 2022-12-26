@@ -74,7 +74,7 @@ export default function Map({
     layer.bindPopup(
       `
       <div style="font-family: 'Tajawal', sans-serif;">
-      <div style=" width:100%; float:left; background-image: url('${COProjectImage1}'); background-size: cover; padding-top: 40px; padding-bottom: 40px; background-blend-mode: overlay;     background-color: #162641;  image-repeat:no-repeat; margin-bottom:20px; font-weight:10px">
+      <div style=" width:100%; float:left; background-image: url('${COProjectImage1}'); background-size: cover; padding-top: 40px; padding-bottom: 40px; background-blend-mode: overlay;  background-color: currentcolor;  image-repeat:no-repeat; margin-bottom:20px; font-weight:10px">
        <h1 style='font-size: 18px; color: white; text-align:center; padding:20px; font-weight: 700;'> ${COProjectName} </h1>
       </div>
       <br></br>
@@ -101,7 +101,7 @@ export default function Map({
     layer.bindPopup(
       `
       <div style="font-family: 'Tajawal', sans-serif;" >
-      <div style=" width:100%; float:left; background-image: url('${COProjectImage1}'); background-size: cover; padding-top: 40px; padding-bottom: 40px; background-blend-mode: overlay;     background-color: #162641;  image-repeat:no-repeat; margin-bottom:20px; font-weight:10px">
+      <div style=" width:100%; float:left; background-image: url('${COProjectImage1}'); background-size: cover; padding-top: 40px; padding-bottom: 40px; background-blend-mode: overlay; background-color: currentcolor;  image-repeat:no-repeat; margin-bottom:20px; font-weight:10px">
        <h1 style='font-size: 18px; color: white; text-align:center; padding:20px; font-weight: 700;'> ${SPFProjectName} </h1>
       </div>
       <br></br>
