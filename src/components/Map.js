@@ -139,20 +139,20 @@ export default function Map({
         <Marker position={position} icon={greenIcon}>
           <Popup>
             {areaGov ? (
-              <h1 className="font-bold mt-5 p-4 font-tajwal">أنت هنا</h1>
+              <h1 className="font-extrabold mt-5 p-4 font-tajwal ">أنت هنا</h1>
             ) : projectPosition ? (
               <>
-                <h1 className="font-bold mt-5 p-4 text-center font-tajwal">
+                <h1 className="font-extrabold mt-5 p-4 text-center font-tajwal">
                   {" "}
                   {projectName}
                 </h1>
                 <hr />
-                <h1 className="font-bold mt-5 text-center p-4 font-tajwal">
+                <h1 className="font-extrabold mt-5 text-center p-4 font-tajwal">
                   {projectDescription}{" "}
                 </h1>
               </>
             ) : (
-              <h1 className="font-bold mt-5  p-4 font-tajwal">أنت هنا</h1>
+              <h1 className="font-extrabold mt-5  p-4 font-tajwal">أنت هنا</h1>
             )}
           </Popup>
         </Marker>
