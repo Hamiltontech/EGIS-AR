@@ -78,9 +78,9 @@ export default function Map({
        <h1 style='font-size: 18px; color: white; text-align:center; padding:20px; font-weight: 700;'> ${COProjectName} </h1>
       </div>
       <br></br>
-      <p style="text-align:center; padding:10px; margin-top:5px"> ${COProjectDescription}</p>
+      <p style="text-align:center; padding:10px; margin-top:5px; font-weight: bold;"> ${COProjectDescription}</p>
      <hr />
-     <p style="text-align:center; padding:10px;">${construction.geometry.coordinates[0]}, ${construction.geometry.coordinates[1]}</p>
+     <p style="text-align:center; padding:10px; font-weight: bold;">${construction.geometry.coordinates[0]}, ${construction.geometry.coordinates[1]}</p>
       <hr/>
     </div>
       `
@@ -105,9 +105,9 @@ export default function Map({
        <h1 style='font-size: 18px; color: white; text-align:center; padding:20px; font-weight: 700;'> ${SPFProjectName} </h1>
       </div>
       <br></br>
-      <p style="text-align:center; padding:10px; margin-top:5px"> ${COProjectDescription}</p>
+      <p style="text-align:center; padding:10px; margin-top:5px; font-weight: bold;"> ${COProjectDescription}</p>
      <hr />
-     <p style="text-align:center; padding:10px;">${spf.geometry.coordinates}</p>
+     <p style="text-align:center; padding:10px; font-weight: bold;">${spf.geometry.coordinates}</p>
       <hr/>
     </div>
       `
