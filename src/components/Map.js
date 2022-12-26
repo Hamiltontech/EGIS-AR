@@ -164,13 +164,13 @@ export default function Map({
   var constructionIcon = L.icon({
     iconUrl: "https://i.imgur.com/jR1ZGvi.png",
     iconSize: [30, 30],
-    iconAnchor: [22, 94],
+    iconAnchor: [15, 40],
     popupAnchor: [0, -100],
   });
   var stationIcon = L.icon({
     iconUrl: "https://i.imgur.com/4LWG8pQ.png",
     iconSize: [30, 30],
-    iconAnchor: [22, 94],
+    iconAnchor: [15, 40],
     popupAnchor: [0, -100],
   });
   function createMarker(feature, latlng) {
