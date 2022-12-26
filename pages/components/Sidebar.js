@@ -823,7 +823,21 @@ const Sidebar = ({
               </div> */}
 
               <div>
-                <button onClick={()=>window.print()} className="bg-[#9d3039] p-1 w-[250px] hover:bg-[#9d3039]/70 ease-in-out duration-200">
+              <button
+              onClick={()=>{
+                setConstruction(false);
+                setStation(false);
+                setMega(false);
+                setSanitary(false)
+                setGov(false)
+                setArea(false)
+                setProjectCoordinates(29.3117);
+                setProjectCoordinates1(47.4818);
+              }}
+              className="bg-[#9d3039] p-1 w-[250px] hover:bg-[#9d3039]/70 ease-in-out duration-200">
+                  Clear Search
+                </button>
+                <button onClick={()=>window.print()} className="bg-[#9d3039] p-1 w-[250px] mt-1 hover:bg-[#9d3039]/70 ease-in-out duration-200">
                   طباعة 
                 </button>
               </div>

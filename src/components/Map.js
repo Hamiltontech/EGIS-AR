@@ -128,12 +128,10 @@ export default function Map({
       if (areaGov === true) {
         map.flyTo([areazone, areazone1], map.getZoom());
         setPosition([areazone, areazone1]);
-      } else if (projectPosition === true) {
+      } else {
         setPosition([projectCoordinated, projectCoordinated1]);
         map.flyTo([projectCoordinated, projectCoordinated1], map.getZoom());
-      } else {
-        map.locate();
-      }
+      } 
     }, [projectCoordinated]);
 
     return position === null ? null : (
@@ -186,7 +184,7 @@ export default function Map({
     <div className=" flex relative mt-[69.38px] font-tajwal" id="map">
       <MapContainer
         center={[47.4818, 29.3117]}
-        zoom={15}
+        zoom={9}
         scrollWheelZoom
         className="h-screen w-full"
       >
