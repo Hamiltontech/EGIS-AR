@@ -14,7 +14,7 @@ import Technical from "./Technical";
 import dynamic from "next/dynamic";
 
 
-const MyMap = dynamic(() => import("./components/Map"), {
+const MyMap = dynamic(() => import("../src/components/Map"), {
   ssr: false
 });
 

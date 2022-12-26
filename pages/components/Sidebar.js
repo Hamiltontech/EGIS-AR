@@ -835,7 +835,7 @@ const Sidebar = ({
               <div className="flex justify-center gap-2 mt-2 text-md ">
     
                 <button className="hover:text-white/50 ease-in-out duration-150 p-1">
-                  <a href="http://162.210.100.154:3000/">English</a>
+                  <a href="https://egis-next.vercel.app/">English</a>
                 </button>
               </div>
 
