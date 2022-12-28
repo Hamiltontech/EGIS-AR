@@ -1,9 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import logo1 from "../../public/assets/Layer.png";
-import logo2 from "../../public/assets/GeoServer.png";
-import logo3 from "../../public/assets/MaxCDN.png";
-import logo4 from "../../public/assets/microsoft.png";
 
 const InfoSection = () => {
   return (

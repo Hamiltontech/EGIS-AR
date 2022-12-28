@@ -818,11 +818,8 @@ const Sidebar = ({
               {/* end of search project */}
               <br />
 
-              {/* <div className="flex items-center justify-center mx-4 h-10 text-[14px] cursor-pointer hover:text-white/50 ease-in-out duration-150">
-              
-              </div> */}
 
-              <div>
+              <div className="hidden lg:block">
               <button
               onClick={()=>{
                 setConstruction(false);
@@ -840,20 +837,21 @@ const Sidebar = ({
                 <button onClick={()=>window.print()} className="bg-[#9d3039] p-1 w-[250px] mt-1 hover:bg-[#9d3039]/70 ease-in-out duration-200">
                   طباعة 
                 </button>
-              </div>
-              <div>
-                <button className="bg-[#9d3039] p-1 w-[250px] mb-5 hover:bg-[#9d3039]/70 ease-in-out duration-200" onClick={()=>setInfo(true)}>
+                <div>
+                <button className="bg-[#9d3039] p-1 w-[250px] mb-5 mt-1 hover:bg-[#9d3039]/70 ease-in-out duration-200" onClick={()=>setInfo(true)}>
                   تحتاج مساعدة ؟
                 </button>
               </div>
-              <div className="flex justify-center gap-2 mt-2 text-md ">
+              </div>
+              
+              <div className="lg:flex justify-center gap-2 mt-2 text-md hidden ">
     
                 <button className="hover:text-white/50 ease-in-out duration-150 p-1">
                   <a href="https://egis-next.vercel.app/">English</a>
                 </button>
               </div>
 
-              <div className="flex items-center justify-center mx-4 text-[11px]">
+              <div className="lg:flex items-center justify-center mx-4 text-[11px] hidden ">
                 جميع الحقوق محفوظة © وزارة الأشغال العامة
               </div>
             </ul>

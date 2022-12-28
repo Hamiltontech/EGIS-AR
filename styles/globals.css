@@ -3,8 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @media print {
 
     table { /* Or specify a table class */
@@ -15,6 +13,13 @@
   
   }
 
+  .leaflet-control-attribution.leaflet-control {
+    display: none !important;
+}
+
+.leaflet-popup-close-button{
+    display: none  !important;
+}
   path.leaflet-interactive {
     fill: transparent;
 }
@@ -94,6 +99,12 @@
     background-color: #162641;
     border-radius: 10px;
 }
+
+/* @media only screen and (max-width: 600px) {
+.leaflet-top {
+    top: 80px !important;
+}
+} */
 .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
     border: none !important;
 }
@@ -182,3 +193,13 @@
 	line-height: 30px;
 	}
 
+    @media only screen and (max-width: 600px) {
+        .leaflet-control-layers {
+            box-shadow: 0 1px 5px rgb(0 0 0 / 40%);
+            background: #fff;
+            border-radius: 100% !important;
+        }
+        .leaflet-control-layers.leaflet-control.leaflet-control-layers-expanded {
+            border-radius: 0px !important;
+        }
+      }

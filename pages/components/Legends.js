@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaMapMarkerAlt, FaGripLinesVertical, FaArrowUp } from 'react-icons/fa'
 import {BsCircleFill, BsSquareFill} from 'react-icons/bs'
-import {AiOutlineArrowUp} from 'react-icons/ai'
 
 const Legends = () => {
     return (

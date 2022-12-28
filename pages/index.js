@@ -1,28 +1,22 @@
 import Head from "next/head";
 import Header from "./components/Header";
-import Search from "./components/Search";
 import Sidebar from "./components/Sidebar";
 import { React, useState, useEffect } from "react";
 import Areas from "../public/data/area.json";
 import Govs from "../public/data/gov.json";
 import Legends from "./components/Legends";
-import AboutSection from "./components/AboutSection";
 import About from "./About";
 import { AiOutlineClose } from "react-icons/ai";
 import Info from "./Info";
 import Technical from "./Technical";
 import dynamic from "next/dynamic";
 
-
 const MyMap = dynamic(() => import("../src/components/Map"), {
   ssr: false
 });
 
-
 export default function Home() {
-  
-
-
+const [proImage, setProImage] = useState("")
   const [sanitary, setSanitary] = useState(false);
   const [construction, setConstruction] = useState(false);
   const [station, setStation] = useState(false);
@@ -30,16 +24,9 @@ export default function Home() {
   const [show, setShow] = useState(false);
   const [about, setAbout] = useState(false);
   const [info, setInfo] = useState(false);
-
-  const handleShow = (e) => {
-    e.preventDefault();
-    setShow(!show);
-  };
-
   const [tech, setTech] = useState(false)
   const [areaGov, setAreaGov] = useState(false)
   const [position, setPosition] = useState(null);
-
   const [govid, setGovid] = useState(0);
   const [govzone, setGovZone] = useState(29.3117);
   const [govzone1, setGovZone1] = useState(47.4818);
@@ -49,7 +36,6 @@ export default function Home() {
   const [projectCoordinated1, setProjectCoordinates1] = useState(47.4818)
   const [projectName,setProjectName] = useState("")
   const [projectDescription, setProjectDescription] = useState("")
-
   const [projectPosition, setprojectPosition] = useState(false);
 
   useEffect(() => {
@@ -70,9 +56,6 @@ export default function Home() {
     });
   }, [govid]);
 
-
-  
-
   return (
     <div className="overflow-y-hidden font-tajwal">
       <Head>
@@ -80,17 +63,14 @@ export default function Home() {
       <meta name="description" content="نظام مستكشف المشاريع الجغرافية وزارة الأشغال العامة الكويت" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header tech={tech} setShow={setShow} show={show} setAbout={setAbout} about={about} info={info} setTech={setTech}/>
-
       <div className={"flex ease-in-out duration-500"}>
-
         <div className={info? "hidden" :about? "hidden": tech? "hidden": "block"}>
         <div
           className={
             show
-              ? ` sm:w-[300px] bg-[#162641] z-40 mt-[69.38px] ease-in-out duration-500 h-screen overflow-y-scroll overflow-x-hidden scrollbar-hide`
-              : `w-0 ease-in-out duration-500 bg-[#162641] mt-[69.38px]`
+              ? ` sm:w-[300px] lg:mt-[69.38px] z-40 ease-in-out duration-500 h-screen overflow-y-scroll overflow-x-hidden scrollbar-hide`
+              : `w-0 ease-in-out duration-500  md:mt-[69.38px]`
           }
         >
           <Sidebar
@@ -118,15 +98,15 @@ export default function Home() {
             info={info}
             projectPosition={projectPosition} 
             setprojectPosition={setprojectPosition}
-            areaGov={areaGov} setAreaGov={setAreaGov}
-            
+            areaGov={areaGov} 
+            setAreaGov={setAreaGov}
+            proImage={proImage}
+            setProImage={setProImage}
           />
         </div>
         </div>
         {/* <Search /> */}
-
         <div className={about ? "hidden" :info? 'hidden' :tech? "hidden" : "w-full h-full"}>
-       
           <MyMap 
             govzone={govzone}
             govzone1={govzone1}
@@ -140,11 +120,15 @@ export default function Home() {
             projectPosition={projectPosition} 
             setprojectPosition={setprojectPosition}
             construction={construction}
-            areaGov={areaGov} setAreaGov={setAreaGov}
+            areaGov={areaGov} 
+            setAreaGov={setAreaGov}
+            proImage={proImage}
+            setProImage={setProImage}
+            
           />
-    
-          {/* legends */}
+          <div className="hidden lg:block">
           <Legends />
+          </div>
         </div>
         {about && (
           <div className="w-full h-full bg-[#162641] ">
@@ -176,9 +160,9 @@ export default function Home() {
               id="defaultModal"
               tabindex="-1"
               aria-hidden="true"
-              class="flex justify-center align-middle   z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
+              class="flex justify-center align-middle z-50 w-full lg:p-4 my-3 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
             >
-              <div class="relative w-full h-full max-w-[70%] md:h-auto ">
+              <div class="relative w-full h-full lg:max-w-[70%] md:h-auto max-w-[90%]">
                 <div class="relative bg-white shadow ">
                   <button
                     className="flex float-right pr-1 mt-1 cursor-pointer "
@@ -194,7 +178,6 @@ export default function Home() {
             </div>
           </div>
           }
-
 {tech&&
 <div className="w-full h-full bg-[#162641] ">
             <div
@@ -219,7 +202,6 @@ export default function Home() {
             </div>
           </div>
           }
-
       </div>
     </div>
   );
