@@ -108,17 +108,19 @@ export default function Map({
     const map = useMapEvents({
       locationfound(e) {
         setPosition(e.latlng);
-        map.flyTo(e.latlng, map.getZoom(), 15);
+        map.flyTo(e.latlng, map.getZoom());
       },
     });
 
     useEffect(() => {
       if (areaGov === true) {
-        map.flyTo([areazone, areazone1], map.getZoom(), 15);
+        map.flyTo([areazone, areazone1], map.getZoom());
         setPosition([areazone, areazone1]);
-      } else {
+      } else if(projectPosition === true) {
         setPosition([projectCoordinated, projectCoordinated1]);
-        map.flyTo([projectCoordinated, projectCoordinated1], map.getZoom(), 15);
+        map.flyTo([projectCoordinated, projectCoordinated1], map.getZoom());
+      }else{
+        map.locate()
       }
     }, [projectCoordinated]);
 
@@ -159,7 +161,7 @@ export default function Map({
     <div className=" flex relative lg:mt-[69.38px] font-tajwal" id="map">
       <MapContainer
         center={[47.4818, 29.3117]}
-        zoom={9}
+        zoom={15}
         scrollWheelZoom
         className="h-screen w-full"
       >
