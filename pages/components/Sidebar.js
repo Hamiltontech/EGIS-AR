@@ -1136,7 +1136,7 @@ const Sidebar = ({
                   }}
                   className="bg-[#9d3039] p-1 w-[250px] hover:bg-[#9d3039]/70 ease-in-out duration-200"
                 >
-                  Clear Search
+                  مسح البحث
                 </button>
                 <button
                   onClick={() => window.print()}
