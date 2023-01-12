@@ -919,12 +919,16 @@ console.log(govid)
     //   }
     // }, [projectCoordinated]);
 
+
+ 
+
     useEffect(() => {
       if (areaGov === true) {
         // map.flyTo([areazone, areazone1], map.getZoom());
         map.fitBounds(coords);
         setPosition([areazone, areazone1]);
       } else {
+       
         setPosition([projectCoordinated, projectCoordinated1]);
         map.flyTo([projectCoordinated, projectCoordinated1], map.getZoom());
         
@@ -966,6 +970,7 @@ console.log(govid)
       </>
     );
   }
+
 
 
   return (
