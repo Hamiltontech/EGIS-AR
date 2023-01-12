@@ -203,3 +203,7 @@
             border-radius: 0px !important;
         }
       }
+      
+      .leaflet-top .leaflet-control {
+        margin-top: 90px !important;
+    }

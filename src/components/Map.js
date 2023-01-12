@@ -981,7 +981,7 @@ console.log(govid)
 
 
   return (
-    <div className=" flex relative lg:mt-[69.38px] font-tajwal" id="map">
+    <div className=" flex relative no-scrollbar font-tajwal" id="map">
       <MapContainer
         center={[47.4818, 29.3117]}
         zoom={9}
