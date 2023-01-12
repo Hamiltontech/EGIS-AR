@@ -92,9 +92,9 @@
     width: 100%;
     z-index: 1000;
 }
-.leaflet-top.leaflet-left {
+/* .leaflet-top.leaflet-left {
     display: none;
-}
+} */
 .leaflet-control-layers-toggle{
     background-color: #162641;
     border-radius: 10px;
