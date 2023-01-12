@@ -37,7 +37,9 @@ export default function Map({
   projectPosition,
   areaGov,
   proImage,
-  govid
+  govid,
+  clearZoom, 
+  setClearZoom
 }) {
   const apiKey =
     "AAPK1f12d3f9f7e0446b97bd5fad297b62dfNs64weAwjHl0BHUdtKX9GisBgUj4312WkhiIHfzTuTes26tENgAO6tBOGEErF-0r";
@@ -927,7 +929,12 @@ console.log(govid)
         // map.flyTo([areazone, areazone1], map.getZoom());
         map.fitBounds(coords);
         setPosition([areazone, areazone1]);
-      } else {
+      } else if( clearZoom === true){
+        map.setZoom(9)
+      }  
+      
+      
+      else {
        
         setPosition([projectCoordinated, projectCoordinated1]);
         map.flyTo([projectCoordinated, projectCoordinated1], map.getZoom());
