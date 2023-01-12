@@ -124,6 +124,7 @@ const [proImage, setProImage] = useState("")
             setAreaGov={setAreaGov}
             proImage={proImage}
             setProImage={setProImage}
+            govid={govid}
             
           />
           <div className="hidden lg:block">
