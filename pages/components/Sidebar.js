@@ -133,7 +133,7 @@ const Sidebar = ({
             <ul className="flex flex-col py-4 space-y-1">
               {/* images section */}
               <li className="px-1 ">
-                <div className="flex flex-row justify-end h-8  mt-20 lg:mt-12">
+                <div className="flex flex-row justify-end h-8  mt-40 lg:mt-12">
                   <div className="text-xs tracking-wide text-white/70 uppercase ">
                     صور المشروع
                   </div>

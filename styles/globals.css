@@ -201,9 +201,14 @@
         }
         .leaflet-control-layers.leaflet-control.leaflet-control-layers-expanded {
             border-radius: 0px !important;
+
         }
+          .leaflet-top{ 
+            top: 10% !important;
+            position: fixed !important;
+          }
       }
-      
+/*       
       .leaflet-top .leaflet-control {
         margin-top: 90px !important;
-    }
+    } */
