@@ -17,6 +17,12 @@
     display: none !important;
 }
 
+
+.leaflet-top{ 
+    top: 10% !important;
+    position: fixed !important;
+  }
+
 .leaflet-popup-close-button{
     display: none  !important;
 }
